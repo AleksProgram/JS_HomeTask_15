@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кулинарный помощник</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <main>
+    <h1>🍳 Кулинарный помощник</h1>
+
+    <form>
+      <div>
+        <label for="userName">Ваше имя:</label>
+        <input id="userName" type="text" placeholder="Например, John">
+      </div>
+
+      <div>
+        <label for="dishTitle">Название блюда:</label>
+        <input id="dishTitle" type="text" placeholder="Например, Картофельное пюре">
+      </div>
+
+      <button id="searchBtn" type="submit">Искать рецепт</button>
+    </form>
+
+    <!-- Сюда выводится ответ от Gemini -->
+    <div id="result"></div>
+  </main>
+
+  <!-- Модальное окно для ошибок -->
+  <dialog id="errorModal">
+    <h3>⚠️ Ошибка</h3>
+    <p id="errorMessage"></p>
+    <button id="closeModalBtn" type="button">Закрыть</button>
+  </dialog>
+
+  <!-- Тип модуль укзаывает на то, что в данном файле нам нужны импорт и экспорт -->
+  <script type="module" src="./js/client.js"></script>
+</body>
+</html>
