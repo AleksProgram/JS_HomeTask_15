@@ -1,8 +1,26 @@
 [
   {
-    "name": "aaa",
-    "count": 12.3,
-    "price": 10.1,
-    "expDate": "1010-10-10"
+    "name": "Яйца",
+    "count": 6,
+    "price": 120,
+    "expDate": "2026-10-01"
+  },
+  {
+    "name": "Молоко",
+    "count": 1,
+    "price": 80,
+    "expDate": "2026-09-30"
+  },
+  {
+    "name": "Сыр",
+    "count": 0.2,
+    "price": 200,
+    "expDate": "2026-10-05"
+  },
+  {
+    "name": "Мясо",
+    "count": 5,
+    "price": 500,
+    "expDate": "2026-12-23"
   }
 ]
