@@ -17,7 +17,7 @@ const errorMessage = document.querySelector("#errorMessage");
 const closeModalBtn = document.querySelector("#closeModalBtn");
 
 closeModalBtn.addEventListener("click", () => {
-  // отслеживает клик по кнопке и закрывает модальное окно
+  // отслеживает клик по кнопке и закрывает модальное окно;
   errorModal.close();
 });
 
@@ -31,7 +31,7 @@ searchBtn.addEventListener("click", async (e) => {
     // получаем пользователя. нет в базе - возвращаем GUEST
     const user = getAuthenticatedUser(userNameInput.value);
 
-    const products = await readFromJsonFile("./fridge.json");
+    const products = await readFromJsonFile("../fridge.json");
 
     // Формируем промпт
     const basePrompt = createBasePromptByRole(user);
